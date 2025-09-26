@@ -1,529 +1,368 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Company Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      font: 400 15px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
-  }
-  h2 {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
-  }
-  h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      color: #303030;
-      font-weight: 400;
-      margin-bottom: 30px;
-  }  
-  .jumbotron {
-      background-color: #f4511e;
-      color: #fff;
-      padding: 100px 25px;
-      font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-      padding: 60px 50px;
-  }
-  .bg-grey {
-      background-color: #f6f6f6;
-  }
-  .logo-small {
-      color: #f4511e;
-      font-size: 50px;
-  }
-  .logo {
-      color: #f4511e;
-      font-size: 200px;
-  }
-  .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-  }
-  .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #f4511e;
-  }
-  .carousel-indicators li {
-      border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-      background-color: #f4511e;
-  }
-  .item h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      font-weight: 400;
-      font-style: italic;
-      margin: 70px 0;
-  }
-  .item span {
-      font-style: normal;
-  }
-  .panel {
-      border: 1px solid #f4511e; 
-      border-radius:0 !important;
-      transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-      border: 1px solid #f4511e;
-      background-color: #fff !important;
-      color: #f4511e;
-  }
-  .panel-heading {
-      color: #fff !important;
-      background-color: #f4511e !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-      background-color: white !important;
-  }
-  .panel-footer h3 {
-      font-size: 32px;
-  }
-  .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-  }
-  .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #f4511e;
-      color: #fff;
-  }
-  .navbar {
-      margin-bottom: 0;
-      background-color: #f4511e;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
-      background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
-  }
-  footer .glyphicon {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;	
-      animation-duration: 1s;	
-      -webkit-animation-duration: 1s;
-      visibility: visible;			
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }	
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
-  }
-  </style>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="jumbotron text-center">
-  <h1>Company</h1> 
-  <p>We specialize in blablabla</p> 
-  <form class="form-inline">
-    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-    <button type="button" class="btn btn-danger">Subscribe</button>
-  </form>
-</div>
-
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>About Company Page</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">  
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
-  <!-- INSTANSIVE WIDGET -->
-  <script src="//instansive.com/widget/js/instansive.js"></script>
-  <iframe src="//instansive.com/widgets/21735bb9ae872f776f961f095b650788375b42c1.html" id="instansive_21735bb9ae" name="instansive_21735bb9ae"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-  </div><br>
-  
-  <h2>What our customers say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
-      </div>
-      <div class="item">
-        <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
-  <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Basic</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>     
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Pro</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>       
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Premium</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>    
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact me and I'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Ponorogo, Indonesia</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +6289679339200</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> alhamwahyuanda@gmail.com</p>	   
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>	
-    </div>
-  </div>
-</div>
-
-<div id="googleMap" style="height:400px;width:100%;"></div>
-
-<!-- Add Google Maps -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-function initialize() {
-var mapProp = {
-  center:myCenter,
-  zoom:12,
-  scrollwheel:false,
-  draggable:false,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>		
-</footer>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-   
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alham W - Personal Website</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    
+    <!-- Tailwind Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#197fe6",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111921",
+                    },
+                    fontFamily: {
+                        display: ["Inter"],
+                    },
+                    borderRadius: { 
+                        DEFAULT: "0.25rem", 
+                        lg: "0.5rem", 
+                        xl: "0.75rem", 
+                        full: "9999px" 
+                    },
+                },
+            },
+        };
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
         }
-    });
-  });
-})
-</script>
-
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Header -->
+        <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-slate-200/80 bg-background-light/80 px-10 py-4 backdrop-blur-sm dark:border-slate-800/80 dark:bg-background-dark/80">
+            <div class="flex items-center gap-4">
+                <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+                </svg>
+                <h2 class="text-xl font-bold text-slate-900 dark:text-white">Alham W</h2>
+            </div>
+            
+            <nav class="hidden items-center gap-8 md:flex">
+                <a class="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-300 dark:hover:text-primary" href="#summary">Summary</a>
+                <a class="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-300 dark:hover:text-primary" href="#services">Services</a>
+                <a class="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-300 dark:hover:text-primary" href="#portfolio">Portfolio</a>
+                <a class="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-300 dark:hover:text-primary" href="#contact">Contact</a>
+            </nav>
+            
+            <div class="flex items-center gap-4">
+                <button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-slate-200/50 text-slate-600 transition-colors hover:bg-primary/20 hover:text-primary dark:bg-slate-800/50 dark:text-slate-300 dark:hover:bg-primary/30 dark:hover:text-primary">
+                    <span class="material-symbols-outlined">language</span>
+                </button>
+                <div class="h-10 w-10 rounded-full bg-cover bg-center bg-no-repeat" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2Mtdf2iory0sOAHtpI2jMx-Qk5sPVVl7ECS5r_o9up2pTNSyzYGw4HnAFLAZLMDS5sOqx07ML48kVfQsrHAh-UmiUhgSxlx8bQUYaZnkXVY4wSUK6jYs9uiOyEDzkmDR-7S_GI8ekXBUFQsLsWQJQKlLWwN6d_4rfe64hMES7Hl0EwaU-w3D3_1Q7cV2LF7aClgErbgQgaUpbge7YhZE3rjBKdWDV54BLEfyfpH1_WpGVw1tEHjvAyc9A66ysbx_ysbhtHLAZbso');"></div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="flex flex-1 flex-col items-center py-12">
+            <div class="w-full max-w-5xl px-4 md:px-10">
+                <!-- Hero Section -->
+                <section class="mb-16" id="hero">
+                    <div class="relative flex min-h-[480px] flex-col items-start justify-end overflow-hidden rounded-xl bg-cover bg-center p-8 md:p-12" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 50%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBfDJjt8lTgNpFrUY0sBSKR1Q-yf2wLQrsikFMStGw4SzsAc4QhSC-xy1PCCUCIxmiEQi0xtJqQhDCAE1C3qONGPb-QS51UNC2vKvrVY61-APy7wX8G6bZmzzoie3BpOlpI8sj4t4kdhms_0Wt3TdieOQWghWuG7bMefKtGWnkPWzVb2xbLkJdqkwjHsXICA_PdPaQP4DzlJgav5bNniun4U0ArvVmnZlnExy72DjYz1IF87IArr3rV9Z27xalwt3cBSpV4O8Y4RCM');">
+                        <div class="z-10 flex flex-col items-start gap-4">
+                            <h1 class="text-4xl font-black text-white md:text-6xl">Alham W</h1>
+                            <p class="max-w-xl text-base text-slate-200 md:text-lg">
+                                A seasoned professional with a passion for innovation and excellence. With over a decade of experience in the tech industry, I specialize in creating impactful solutions that drive business growth and enhance user experiences.
+                            </p>
+                            <a class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center rounded-lg bg-primary px-5 text-base font-bold text-white transition-transform hover:scale-105" href="#portfolio">
+                                View Portfolio
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Summary Section -->
+                <section class="mb-16 scroll-mt-24" id="summary">
+                    <h2 class="mb-4 text-3xl font-bold text-slate-900 dark:text-white">Summary</h2>
+                    <p class="text-base leading-relaxed text-slate-600 dark:text-slate-300">
+                        I am a highly motivated and results-oriented professional with a strong background in technology and business. My career has been marked by a consistent track record of success in leading projects, developing innovative solutions, and driving strategic initiatives. I am adept at working in dynamic environments and collaborating with cross-functional teams to achieve objectives. My commitment to continuous learning and improvement ensures that I stay at the forefront of industry trends and best practices.
+                    </p>
+                </section>
+                <!-- Services Section -->
+                <section class="mb-16 scroll-mt-24" id="services">
+                    <h2 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">Services</h2>
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        <div class="flex flex-col gap-4 rounded-lg border border-slate-200 bg-white p-6 transition-shadow hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 dark:hover:shadow-primary/10">
+                            <span class="material-symbols-outlined text-4xl text-primary">code</span>
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white">Software Development</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Crafting robust and scalable software solutions tailored to meet specific business needs.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-lg border border-slate-200 bg-white p-6 transition-shadow hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 dark:hover:shadow-primary/10">
+                            <span class="material-symbols-outlined text-4xl text-primary">design_services</span>
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white">UI/UX Design</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Creating intuitive and visually appealing user interfaces that enhance user engagement and satisfaction.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 rounded-lg border border-slate-200 bg-white p-6 transition-shadow hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 dark:hover:shadow-primary/10">
+                            <span class="material-symbols-outlined text-4xl text-primary">monitoring</span>
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white">Business Strategy</h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Developing strategic plans and initiatives to drive business growth and achieve long-term success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Portfolio Section -->
+                <section class="relative mb-16 scroll-mt-24" id="portfolio" x-data="{
+                    scrollContainer: null,
+                    slides: [],
+                    activeSlide: 0,
+                    atStart: true,
+                    atEnd: false,
+                    init() {
+                        this.scrollContainer = this.$refs.scrollContainer;
+                        this.slides = this.$refs.scrollContainer.children;
+                        this.updateButtons();
+                        this.observeSlides();
+                    },
+                    updateButtons() {
+                        if (!this.scrollContainer) return;
+                        const { scrollLeft, scrollWidth, clientWidth } = this.scrollContainer;
+                        this.atStart = scrollLeft === 0;
+                        this.atEnd = scrollLeft + clientWidth >= scrollWidth - 1;
+                    },
+                    scrollLeft() {
+                        this.scrollContainer.scrollBy({ left: -this.scrollContainer.offsetWidth, behavior: 'smooth' });
+                    },
+                    scrollRight() {
+                        this.scrollContainer.scrollBy({ left: this.scrollContainer.offsetWidth, behavior: 'smooth' });
+                    },
+                    scrollToSlide(index) {
+                        this.slides[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                    },
+                    observeSlides() {
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    this.activeSlide = Array.from(this.slides).indexOf(entry.target);
+                                }
+                            });
+                        }, { root: this.scrollContainer, threshold: 0.5 });
+                        Array.from(this.slides).forEach(slide => {
+                            observer.observe(slide);
+                        });
+                    }
+                }">
+                    <h2 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">Portfolio</h2>
+                    <div @scroll.debounce.200ms="updateButtons" class="no-scrollbar flex gap-8 overflow-x-auto pb-4" style="scroll-snap-type: x mandatory;" x-ref="scrollContainer">
+                        <div class="w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style="scroll-snap-align: start;">
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">Web Application for Financial Management</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">A comprehensive web application designed to help users manage their finances effectively.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">Mobile App for Health and Fitness Tracking</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">A mobile application focused on tracking health and fitness metrics, providing personalized insights.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">E-commerce Platform for Sustainable Products</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">An e-commerce platform specializing in sustainable and eco-friendly products.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">Project Management Dashboard</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">A powerful dashboard to streamline project workflows and enhance team collaboration.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">AI-Powered Chatbot</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">An intelligent chatbot designed to enhance customer service and engagement.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">Cloud Storage Solution</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">A secure and scalable cloud storage platform for personal and business use.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style="scroll-snap-align: start;">
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">Data Analytics Platform</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">A platform for visualizing and analyzing complex datasets to derive actionable insights.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">Content Management System</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">A user-friendly CMS for creating and managing digital content seamlessly.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">Online Learning Platform</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">An interactive e-learning platform with a wide range of courses and resources.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">Collaborative Workspace Tool</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">A tool designed to facilitate real-time collaboration and communication among teams.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">Cybersecurity Dashboard</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">A dashboard for monitoring and managing security threats in real-time.</p>
+                                </div>
+                            </div>
+                            <div class="group flex flex-col gap-4">
+                                <div class="overflow-hidden rounded-lg">
+                                    <div class="h-48 w-full bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvXCjm1BUUPSnEJlT4QTX0RV97cUvNQ8iVIsdVqcleX00-fD8l8yrLkmcNFSXOapAK225rinJjantMpSdlawgLv1TMafcQ6uj2NgYjAXS0gx4PwmhgXvmHLi_XgZURIOwLArCS4pTpP01qunWQjSFntnd2NYx-SNKN1povaXc9lu9rAIbOSq1yljH_U4Cto3o7r3aoImwBaSmqVbw6KU17ts14whN3UE83oHIJbewqtBaBN9g2RJs1tfnzqK4ALUFN801XcRfWy7M');"></div>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-slate-900 dark:text-white">IoT Home Automation System</h3>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">A smart home system to control various devices and appliances remotely.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <div class="absolute -left-4 top-1/2 -translate-y-1/2" x-show="!atStart" x-transition="">
+                        <button @click="scrollLeft()" class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-slate-200/50 text-slate-600 transition-colors hover:bg-primary/20 hover:text-primary dark:bg-slate-800/50 dark:text-slate-300 dark:hover:bg-primary/30 dark:hover:text-primary">
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+                    </div>
+                    <div class="absolute -right-4 top-1/2 -translate-y-1/2" x-show="!atEnd" x-transition="">
+                        <button @click="scrollRight()" class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-slate-200/50 text-slate-600 transition-colors hover:bg-primary/20 hover:text-primary dark:bg-slate-800/50 dark:text-slate-300 dark:hover:bg-primary/30 dark:hover:text-primary">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Scroll Indicators -->
+                    <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 transform">
+                        <div class="flex items-center justify-center space-x-2">
+                            <template :key="index" x-for="(slide, index) in slides">
+                                <button :class="{ 'bg-primary': activeSlide === index, 'bg-slate-300 dark:bg-slate-600': activeSlide !== index }" @click="scrollToSlide(index)" class="h-2 w-2 rounded-full transition-colors"></button>
+                            </template>
+                        </div>
+                    </div>
+                </section>
+                <!-- Contact Section -->
+                <section class="scroll-mt-24" id="contact">
+                    <h2 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">Contact</h2>
+                    <div class="mx-auto max-w-xl">
+                        <div class="mb-8 flex items-center justify-center space-x-6 text-center">
+                            <a class="flex flex-col items-center gap-2 text-slate-600 transition-colors hover:text-primary dark:text-slate-300 dark:hover:text-primary" href="mailto:allhamw@gmail.com">
+                                <span class="material-symbols-outlined text-3xl">email</span>
+                                <span class="text-sm font-medium">Email</span>
+                            </a>
+                            <a class="flex flex-col items-center gap-2 text-slate-600 transition-colors hover:text-primary dark:text-slate-300 dark:hover:text-primary" href="https://wa.me/1234567890" target="_blank">
+                                <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.35 3.43 16.84L2.05 22L7.31 20.55C8.75 21.32 10.36 21.76 12.04 21.76C17.5 21.76 21.95 17.31 21.95 11.85C21.95 6.39 17.5 2 12.04 2ZM12.04 20.13C10.56 20.13 9.12 19.74 7.89 19L7.54 18.8L4.44 19.65L5.3 16.61L5.07 16.26C4.24 14.93 3.78 13.45 3.78 11.91C3.78 7.33 7.51 3.6 12.04 3.6C16.57 3.6 20.3 7.33 20.3 11.85C20.3 16.38 16.57 20.13 12.04 20.13ZM17.43 14.36C17.18 14.24 15.91 13.64 15.68 13.55C15.46 13.47 15.29 13.43 15.12 13.68C14.95 13.92 14.47 14.52 14.33 14.67C14.18 14.82 14.04 14.86 13.79 14.74C13.54 14.62 12.65 14.32 11.62 13.4C10.82 12.68 10.27 11.8 10.13 11.55C9.98 11.31 10.1 11.18 10.21 11.07C10.31 10.96 10.46 10.78 10.59 10.63C10.71 10.48 10.76 10.37 10.88 10.15C10.99 9.93 10.93 9.74 10.86 9.62C10.78 9.5 10.27 8.24 10.05 7.73C9.83 7.22 9.6 7.29 9.44 7.29C9.28 7.29 9.11 7.29 8.94 7.29C8.77 7.29 8.52 7.37 8.31 7.59C8.09 7.82 7.59 8.28 7.59 9.24C7.59 10.2 8.33 11.12 8.45 11.27C8.57 11.42 9.98 13.65 12.21 14.54C13.02 14.87 13.54 15.02 13.93 15.13C14.55 15.29 15.01 15.25 15.35 15.13C15.73 14.99 16.9 14.38 17.12 13.82C17.34 13.26 17.34 12.8 17.27 12.68C17.19 12.56 17.02 12.52 16.77 12.4C16.52 12.28 15.25 11.68 15.02 11.59C14.8 11.51 14.63 11.47 14.46 11.72C14.29 11.96 13.81 12.56 13.67 12.71C13.52 12.86 13.38 12.9 13.13 12.78C12.88 12.66 11.99 12.36 11.02 11.48C10.24 10.82 9.73 10.01 9.61 9.79C9.49 9.57 9.61 9.45 9.72 9.34C9.82 9.23 9.97 9.05 10.1 8.9C10.22 8.75 10.27 8.64 10.39 8.42C10.5 8.2 10.44 8.01 10.37 7.87C10.29 7.75 9.78 6.49 9.56 5.98C9.34 5.47 9.11 5.54 8.95 5.54C8.79 5.54 8.62 5.54 8.45 5.54C8.28 5.54 8.03 5.62 7.82 5.84C7.6 6.07 7.1 6.53 7.1 7.49C7.1 8.45 7.84 9.37 7.96 9.52C8.08 9.67 9.49 11.9 11.72 12.79C12.53 13.12 13.05 13.27 13.44 13.38C14.06 13.54 14.52 13.5 14.86 13.38C15.24 13.24 16.41 12.63 16.63 12.07C16.85 11.51 16.85 11.05 16.78 10.93C16.7 10.81 16.53 10.77 16.28 10.65"></path>
+                                </svg>
+                                <span class="text-sm font-medium">WhatsApp</span>
+                            </a>
+                            <a class="flex flex-col items-center gap-2 text-slate-600 transition-colors hover:text-primary dark:text-slate-300 dark:hover:text-primary" href="https://www.linkedin.com/in/alham-wahyuanda-b689124a/" target="_blank">
+                                <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                                </svg>
+                                <span class="text-sm font-medium">LinkedIn</span>
+                            </a>
+                        </div>
+                        
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="name">Name</label>
+                                <input class="form-input mt-1 block w-full rounded-lg border-slate-300 bg-white p-3 text-sm text-slate-900 shadow-sm focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500" id="name" name="name" placeholder="Your Name" type="text">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="email">Email</label>
+                                <input class="form-input mt-1 block w-full rounded-lg border-slate-300 bg-white p-3 text-sm text-slate-900 shadow-sm focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500" id="email" name="email" placeholder="Your Email" type="email">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="message">Message</label>
+                                <textarea class="form-textarea mt-1 block w-full rounded-lg border-slate-300 bg-white p-3 text-sm text-slate-900 shadow-sm focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500" id="message" name="message" placeholder="Your Message" rows="4"></textarea>
+                            </div>
+                            <div class="flex justify-end">
+                                <button class="flex h-10 min-w-[84px] cursor-pointer items-center justify-center rounded-lg bg-primary px-4 text-sm font-bold text-white transition-transform hover:scale-105" type="submit">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="mt-auto border-t border-slate-200/80 bg-background-light px-10 py-6 dark:border-slate-800/80 dark:bg-background-dark">
+            <div class="mx-auto max-w-5xl text-center text-sm text-slate-500 dark:text-slate-400">
+                <p>© 2025 Alham W. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>
